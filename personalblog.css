@@ -1,0 +1,161 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+    max-width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+/* ----------------------------------------------------------------- */
+#title {
+    font-weight:700;
+    letter-spacing: 2px;
+    font-size: 2.8em;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    position:absolute;
+    z-index: 2;
+    width: 97%;
+    padding: 21px;
+    font-family: helvetica;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    margin: 0px .5em;;
+    font-size:1.5em; 
+    justify-self:left;
+    padding: .3em;
+}
+a:hover {
+    text-decoration: underline;
+    color: #a28423;
+}
+#mainimg {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 65vh;
+    object-fit:cover;
+}
+.mainimg {
+    background-color: #a28423;
+    border-bottom: 60px;
+    margin-bottom: 60px;
+    border-color: #a28423;
+    box-shadow: 
+            0px 5px 14px 3px rgba(0,0,0,0.8);
+}
+#welcome {
+    display: inline;
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif
+}
+/* ------------------------------------------------------------------------------------------------------ */
+main {
+    padding: 0px 10%;
+}
+.aboutme {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    margin-bottom: 3em;
+    border-radius: 100px;
+    padding-right: 5em;
+    box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.6);  
+
+}
+.aboutme:hover {
+    background-color: #a28423d0;
+    box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.6);
+    transition: 600ms;
+    transform: scale(1.1);
+  
+}
+#me {
+    border-radius: 50%;
+   width: 10em;
+   height:10em;
+   margin: 0em 3em 0em .8em;
+   object-fit:cover;
+   align-self: center;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+/* --------------------------------------------------------- */
+.CodingProjects {
+    text-align: center;
+    background-color: gainsboro;
+    margin-bottom: 3em;
+    padding: .3em 0px;
+    box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.6);
+    border-radius: 10px;
+
+}
+.CodingProjects:hover{
+    background-color: #a28423d0;
+    transition: 600ms;
+    transform: scale(1.1);
+}
+form {
+    text-align: center;
+    margin-bottom: 5em;
+    padding: .3em 0px;
+    background-color: gainsboro;
+    box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding-bottom: 2em;
+}
+form:hover {
+    background-color: #a28423d0;
+    transition: 600ms;
+    transform: scale(1.1);
+}
+/* ============================================= */
+@media (min-width:900px) {
+    a:hover {
+        background-color:hsl(0, 0%, 95%, .8);
+        border-radius: 5px;
+        border-color: #a28423;
+        text-decoration: none;
+        padding: .3em;
+        transition: 600ms;
+        transform: scale(3);
+        box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.6);
+
+    }
+}
+@media (max-width:900px) {
+    .nav-links {
+        display:flex;
+        flex-direction: column;
+        justify-self: right;
+        text-align: right;}}
+        
+@media (max-width:600px) {
+ 
+    #welcome { 
+        font-size: 2em;
+    }
+    .aboutme {
+        flex-direction: column;
+        padding: 0px 2em 1em 2em;
+    }
+    #aboutmetitle {
+        text-align: center;
+    }
+    #me {
+        margin: .5em 0em 0em 0em ;
+    }
+}
+@font-face {
+    font-family: "Lander";
+    src: url(LanderGrande-SemiBold.otf) format("opentype");
+    font-weight: 600;
+}
